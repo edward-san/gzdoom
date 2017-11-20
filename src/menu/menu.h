@@ -2,14 +2,19 @@
 #define __M_MENU_MENU_H__
 
 
+#include <stddef.h>
 
-
+#include "c_cvars.h"
 #include "dobject.h"
+#include "dobjgc.h"
+#include "doomtype.h"
+#include "name.h"
+#include "tarray.h"
+#include "v_font.h"
+#include "zstring.h"
+
 #include "d_player.h"
 #include "r_data/r_translate.h"
-#include "c_cvars.h"
-#include "v_font.h"
-#include "textures/textures.h"
 
 EXTERN_CVAR(Float, snd_menuvolume)
 EXTERN_CVAR(Int, m_use_mouse);
@@ -17,11 +22,10 @@ EXTERN_CVAR(Int, m_use_mouse);
 
 struct event_t;
 class FTexture;
-class FFont;
 enum EColorRange : int;
-class FPlayerClass;
 class FKeyBindings;
 struct FBrokenLines;
+class FileReader;
 
 enum EMenuKey
 {
@@ -328,7 +332,6 @@ extern FOptionMap OptionValues;
 //
 //=============================================================================
 
-struct event_t;
 void M_EnableMenu (bool on) ;
 bool M_Responder (event_t *ev);
 void M_Ticker (void);
