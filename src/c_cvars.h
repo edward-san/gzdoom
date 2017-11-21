@@ -34,7 +34,11 @@
 #ifndef __C_CVARS_H__
 #define __C_CVARS_H__
 
-#include "doomtype.h"
+#include <stddef.h>
+#include <stdint.h>
+
+#include "basictypes.h"
+#include "zstring.h"
 #include "tarray.h"
 
 /*
@@ -90,8 +94,6 @@ enum ECVarType
 
 class FConfigFile;
 class AActor;
-
-class FxCVar;
 
 class FBaseCVar
 {
