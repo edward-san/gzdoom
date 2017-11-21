@@ -3,10 +3,16 @@
 #ifndef __RESFILE_H
 #define __RESFILE_H
 
+#include <stddef.h>
+#include <stdint.h>
+
+#include "zstring.h"
+
 #include "files.h"
 
 class FResourceFile;
 class FTexture;
+class FileReader;
 
 // This holds a compresed Zip entry with all needed info to decompress it.
 struct FCompressedBuffer
