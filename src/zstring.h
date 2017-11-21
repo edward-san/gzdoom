@@ -33,10 +33,11 @@
 */
 
 
-#include <stdio.h>
+#include <assert.h>
 #include <stdarg.h>
-#include <string.h>
 #include <stddef.h>
+#include <string.h>
+
 #include "tarray.h"
 #include "name.h"
 
