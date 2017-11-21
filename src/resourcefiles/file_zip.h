@@ -1,8 +1,12 @@
 #ifndef __FILE_ZIP_H
 #define __FILE_ZIP_H
 
+#include <stddef.h>
+#include <stdint.h>
+
 #include "resourcefile.h"
 
+class FileReader;
 enum
 {
 	LUMPFZIP_NEEDFILESTART = 128
