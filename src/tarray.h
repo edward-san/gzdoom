@@ -41,11 +41,7 @@
 #include <utility>
 #include <iterator>
 
-#if !defined(_WIN32)
-#include <inttypes.h>		// for intptr_t
-#else
-#include <stdint.h>			// for mingw
-#endif
+#include <stdint.h>
 
 #include "m_alloc.h"
 
