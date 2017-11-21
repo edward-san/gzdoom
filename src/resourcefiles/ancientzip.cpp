@@ -43,8 +43,13 @@
 /*----------------------------------------------------------------------*/
 
 
+#include <assert.h>
+#include <string.h>
 #include <stdlib.h>
+
 #include "ancientzip.h"
+
+#include "files.h"
 
 /****************************************************************
     Bit-I/O variables and routines/macros

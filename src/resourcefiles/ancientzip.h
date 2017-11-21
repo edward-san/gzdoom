@@ -1,5 +1,7 @@
-#include "files.h"
 #include "doomerrors.h"
+#include "tarray.h"
+
+class FileReader;
 
 class FZipExploder
 {
