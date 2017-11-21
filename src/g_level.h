@@ -34,13 +34,20 @@
 #ifndef __G_LEVEL_H__
 #define __G_LEVEL_H__
 
-#include "doomtype.h"
-#include "sc_man.h"
-#include "resourcefiles/file_zip.h"
+#include <stddef.h>
+#include <stdint.h>
+#include <sys/types.h>
+#include <utility>
 
-struct level_info_t;
-struct cluster_info_t;
+#include "doomtype.h"
+#include "name.h"
+#include "resourcefiles/resourcefile.h"
+#include "sc_man.h"
+#include "tarray.h"
+#include "zstring.h"
+
 class FSerializer;
+struct level_info_t;
 
 #if defined(_MSC_VER)
 #pragma section(".yreg$u",read)
@@ -70,7 +77,6 @@ FSerializer &Serialize(FSerializer &arc, const char *key, acsdefered_t &defer, a
 
 
 struct FIntermissionDescriptor;
-struct FIntermissionAction;
 
 struct FMapInfoParser
 {
@@ -256,10 +262,6 @@ struct FSpecialAction
 	int Args[5];				// must allow 16 bit tags for 666 & 667!
 };
 
-class DScroller;
-
-class FScanner;
-struct level_info_t;
 
 struct FOptionalMapinfoData
 {
