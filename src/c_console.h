@@ -35,7 +35,9 @@
 #define __C_CONSOLE__
 
 #include <stdarg.h>
+
 #include "basictypes.h"
+#include "doomdef.h"
 
 struct event_t;
 
