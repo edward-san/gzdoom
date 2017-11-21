@@ -34,7 +34,12 @@
 #ifndef __C_DISPATCH_H__
 #define __C_DISPATCH_H__
 
+#include <stddef.h>
+#include <stdint.h>
+
 #include "doomtype.h"
+#include "tarray.h"
+#include "zstring.h"
 
 class FConfigFile;
 class APlayerPawn;
