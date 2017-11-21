@@ -34,14 +34,13 @@
 */
 
 
-#include <stdlib.h>
 #include <assert.h>
-#include <string.h>
-#include <new>
-#include <utility>
-#include <iterator>
-
 #include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <iterator>
+#include <new>
 
 #include "m_alloc.h"
 
