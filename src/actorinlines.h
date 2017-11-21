@@ -1,6 +1,10 @@
 #pragma once
 
+#include <stddef.h>
+
 #include "actor.h"
+#include "portal.h"
+#include "vectors.h"
 #include "r_defs.h"
 // These depend on both actor.h and r_defs.h so they cannot be in either file without creating a cross dependency.
 
