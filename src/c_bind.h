@@ -34,7 +34,11 @@
 #ifndef __C_BINDINGS_H__
 #define __C_BINDINGS_H__
 
+#include <stddef.h>
+
 #include "doomdef.h"
+#include "tarray.h"
+#include "zstring.h"
 
 struct event_t;
 class FConfigFile;
