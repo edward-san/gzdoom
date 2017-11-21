@@ -34,6 +34,8 @@
 #ifndef NAME_H
 #define NAME_H
 
+#include <stddef.h>
+
 enum ENamedName
 {
 #define xx(n) NAME_##n,
