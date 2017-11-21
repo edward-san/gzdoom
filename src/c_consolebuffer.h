@@ -35,9 +35,12 @@
 
 #include <limits.h>
 #include <stdio.h>
-#include "zstring.h"
+
 #include "tarray.h"
-#include "v_text.h"
+#include "zstring.h"
+
+class FFont;
+struct FBrokenLines;
 
 enum EAddType
 {

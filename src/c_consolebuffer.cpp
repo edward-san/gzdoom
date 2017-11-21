@@ -33,8 +33,15 @@
 **
 */
 
-#include "c_console.h"
+#include <string.h>
+
 #include "c_consolebuffer.h"
+
+#include "c_console.h"
+#include "doomtype.h"
+#include "v_text.h"
+
+class FFont;
 
 
 //==========================================================================
