@@ -29,6 +29,12 @@
 #ifndef __P_MOBJ_H__
 #define __P_MOBJ_H__
 
+// System Headers
+#include <math.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <sys/types.h>
+
 // Basics.
 #include "templates.h"
 
@@ -39,18 +45,23 @@
 // States are tied to finite states are tied to animation frames.
 #include "info.h"
 
-#include "doomdef.h"
-#include "textures/textures.h"
+#include "basictypes.h"
+#include "dobject.h"
+#include "dobjgc.h"
+#include "doomtype.h"
+#include "name.h"
+#include "portal.h"
 #include "r_data/renderstyle.h"
 #include "s_sound.h"
-#include "memarena.h"
-#include "g_level.h"
+#include "tarray.h"
 #include "tflags.h"
-#include "portal.h"
+#include "vectors.h"
+
+#include "textures/textures.h"
+#include "g_level.h"
 
 struct subsector_t;
 struct FBlockNode;
-struct FPortalGroupArray;
 struct visstyle_t;
 class FLightDefaults;
 //
@@ -585,6 +596,7 @@ enum EThingSpecialActivationType
 
 
 class FDecalBase;
+class AActor;
 class AInventory;
 
 inline AActor *GetDefaultByName (const char *name)
@@ -604,9 +616,18 @@ inline T *GetDefault ()
 }
 
 struct line_t;
+struct sector_t;
 struct secplane_t;
 struct msecnode_t;
 struct FStrifeDialogueNode;
+
+class player_t;
+
+class FSerializer;
+class FSharedStringArena;
+class FStateDefinitions;
+class FString;
+class VMFunction;
 
 struct FLinkContext
 {
